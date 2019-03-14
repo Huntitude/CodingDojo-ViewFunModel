@@ -1,0 +1,18 @@
+div.NavHeader {
+    text-align: center;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+}
+h1 {
+    text-align: center;
+}
+div.content {
+    margin: auto;
+    width: 460px;
+    height: 300px;
+    /* border: 1px solid red; */
+
+}

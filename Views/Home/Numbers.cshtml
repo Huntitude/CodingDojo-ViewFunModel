@@ -1,0 +1,38 @@
+@model ViewModelFun.Models.Number
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Numbers</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/index.css">
+  </head>
+  <body>
+      <div class="NavHeader">
+          <ul>
+              <li><a href="/">/Message</a> </li>
+              <li><a href="/numbers">/Numbers</a> </li>
+              <li><a href="/users">/Users</a> </li>
+              <li><a href="/user">/User</a> </li>
+          </ul>
+      </div>
+
+    <h1>Here are some random Numbers!</h1>
+    
+        <div class="content">
+            
+            @{
+                foreach(var x in @Model.newArray)
+                {
+                    <p>@x</p>
+                }
+            }
+          
+        </div>
+
+  </body>
+</html>
